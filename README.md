@@ -1,12 +1,12 @@
 # Einstein Twitter Analyzer
 
-The Twitter Einstein Analyzer app is a Node.js app running on Heroku. It monitors tweets for keywords you can specify. For example, in this case you can look for all the tweets including the #_your_brand_ hashtag. The app uses Einstein Platform Services to analyze each tweet:
+The Einstein Twitter Analyzer app is a Node.js app running on Heroku. It monitors tweets using keywords you specify. The app uses Einstein Platform Services to analyze each tweet:
 
 - Einstein Sentiment identifies the overall sentiment of the tweet (positive, neutral or negative)
 - Einstein Intent identifies a potential call to action in the tweet
 - Einstein Vision attempts to determine what's in the picture attached to the tweet (if any)
 
-The Twitter Einstein Analyzer app then publishes a platform event with the Tweet details as well as the Einstein predictions related to the tweet. Click the **Einstein Twitter Analysis** tab in the Salesforce app to see the tweets and associated predictions.
+The Twitter Einstein Analyzer app then publishes a platform event with the Tweet details as well as the Einstein predictions. You can subscribe to that platform event in a Salesforce app and take the appropriate action when a tweet is published.
 
 ## Installation instructions
 
@@ -18,13 +18,19 @@ The Twitter Einstein Analyzer app then publishes a platform event with the Tweet
 
 1. Create an Einstein account
 
+    https://api.einstein.ai/signup
+
 1. Create an Einstein vision model
+
+    https://trailhead.salesforce.com/en/projects/predictive_vision_apex
 
 1. Create an Einstein intent model
 
+    https://trailhead.salesforce.com/en/modules/einstein_intent_basics
+
 ### Step 2: Create Salesforce App
 
-The steps below provide an example of integrating the Einstein Twitter Analyzer app with the Northern Trail Outfitters sample app. You can use the Einstein Twitter Analyzer app with any Salesforce app. All you need to do is create an Einstein_Event__e platform event (See the Northern Trail Outfitters sample app for an example). 
+The steps below provide an example of integrating the Einstein Twitter Analyzer app with the [Northern Trail Outfitters sample app](https://github.com/trailheadapps/northern-trail-outfitters). You can use the Einstein Twitter Analyzer app with any Salesforce app. All you need to do is create an Einstein_Event__e platform event and subscribe to that event (See the Northern Trail Outfitters sample app for an example). 
 
 1. Install the Northern Trail Outfitters Salesforce application first. See instructions here: <a href="https://github.com/trailheadapps/northern-trail-outfitters">https://github.com/trailheadapps/northern-trail-outfitters</a>
 

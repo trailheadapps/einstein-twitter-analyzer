@@ -1,0 +1,67 @@
+{
+    "name": "Einstein Twitter Analyzer",
+    "description": "Sample application",
+    "env": {
+      "TWITTER_ACCESS_TOKEN": {
+          "description": "Your Twitter app access token",
+          "value":""
+      },
+      "TWITTER_ACCESS_TOKEN_SECRET": {
+          "description": "Your Twitter app access token secret",
+          "value":""
+      },
+      "TWITTER_CONSUMER_KEY": {
+          "description": "Your Twitter app consumer key",
+          "value":""
+      },
+      "TWITTER_CONSUMER_SECRET": {
+          "description": "Your Twitter app consumer secret",
+          "value":""
+      },
+      "TWITTER_TRACK": {
+          "description": "Comma separated list of words to track",
+          "value":""
+      },
+      "EINSTEIN_ACCOUNT_ID": {
+          "description": "Email address used to create Einstein account",
+          "value":""
+      },
+      "EINSTEIN_PRIVATE_KEY": {
+          "description": "Einstein account provate key",
+          "value":""
+      },
+      "EINSTEIN_SENTIMENT_MODEL": {
+          "description": "Einstein sentiment model id",
+          "value":"CommunitySentiment"
+      },
+      "EINSTEIN_INTENT_MODEL": {
+          "description": "Einstein intent model id",
+          "value":""
+      },
+      "EINSTEIN_VISION_MODEL": {
+          "description": "Einstein vision model id",
+          "value":""
+      },
+      "SF_CONSUMER_KEY": {
+          "description": "Consumer key of your Salesforce Connected App",
+          "value":""
+      },
+      "SF_CONSUMER_SECRET": {
+          "description": "Consumer secret of your Salesforce Connected App",
+          "value":""
+      },
+      "SF_USER_NAME": {
+          "description": "Salesforce username for your integration user",
+          "value":""
+      },
+      "SF_USER_PASSWORD": {
+          "description": "Salesforce password for your integration user",
+          "value":""
+      }
+      ,
+      "SF_ENVIRONMENT": {
+          "description": "Salesforce environment. Enter production (for regular developer edition orgs) or sandbox (for scratch orgs)",
+          "value":"production"
+      }
+    }
+  }
