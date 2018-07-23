@@ -46,7 +46,6 @@ exports.getAccessToken = () => {
         if (accessToken) {
             resolve(accessToken);
         } else {
-
             request.post(options, function (error, response, body) {
                 if (error) {
                     console.log(error);

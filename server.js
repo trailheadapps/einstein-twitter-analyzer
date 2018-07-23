@@ -17,7 +17,7 @@ const track = process.env.TWITTER_TRACK.split(',');
 const stream = T.stream('statuses/filter', { track: track });
 
 stream.on('tweet', function (tweet) {
-    console.log(tweet);
+    console.log(tweet.text);
     einstein.analyze(tweet);
 });
 

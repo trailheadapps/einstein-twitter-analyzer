@@ -24,9 +24,12 @@ exports.predict = (text, accessToken) => {
             if (error) {
                 reject(error);
             } else {
-                console.log(body);
-                const data = JSON.parse(body);
-                resolve(data);
+                if (body) {
+                    const data = JSON.parse(body);
+                    resolve(data);
+                } else {
+                    resolve();
+                }
             }
         });
 
