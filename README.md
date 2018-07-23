@@ -122,9 +122,9 @@ The steps below provide an example of integrating the Einstein Twitter Analyzer 
 
 **Note:** If you're using a scratch org for this integration, keep in mind that you'll need to repeat the above steps and re-set your Heroku app's config variables when your scratch org expires.
 
-## Step 4: 
+## Step 4: Experience the application
 
-1. Click the **Einstein Twitter Analyzer** tab
+1. In the Northern Trail Outfitters sample app, click the **Einstein Twitter Analyzer** tab
 
 1. Tweet with one of the keywords you specified in the **TWITTER_TRACK** environment variable
 
