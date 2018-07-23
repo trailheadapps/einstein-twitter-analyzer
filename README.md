@@ -91,7 +91,7 @@ The steps below provide an example of integrating the Einstein Twitter Analyzer 
     heroku config:set TWITTER_CONSUMER_SECRET=*Your Twitter app consumer secret*
     heroku config:set TWITTER_TRACK=*Comma separated list of words to track*
     heroku config:set EINSTEIN_ACCOUNT_ID=*Email address used to create Einstein account*
-    heroku config:set EINSTEIN_PRIVATE_KEY=*Einstein account provate key*
+    heroku config:set EINSTEIN_PRIVATE_KEY="*Einstein account provate key*"
     heroku config:set EINSTEIN_SENTIMENT_MODEL=*Einstein sentiment model id*
     heroku config:set EINSTEIN_INTENT_MODEL=*Einstein intent model id*
     heroku config:set EINSTEIN_VISION_MODEL=*Einstein vision model id*

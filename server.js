@@ -12,7 +12,7 @@ const T = new Twit({
 });
 
 // The words to track
-const track = TWITTER_TRACK.split(',');
+const track = process.env.TWITTER_TRACK.split(',');
 
 const stream = T.stream('statuses/filter', { track: track });
 
