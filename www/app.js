@@ -2,15 +2,15 @@ function analyze() {
 
     var phrase = document.getElementById("phrase").value;
 
-    var xmlhttp = new XMLHttpRequest(),
+    var xmlhttpp = new XMLHttpRequest(),
         method = 'POST',
         url = '/language';
 
-    xmlhttp.open(method, url, true);
-    xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-    xmlhttp.onload = function () {
+    xmlhttpp.open(method, url, true);
+    xmlhttpp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+    xmlhttpp.onload = function () {
 
     };
-    xmlhttp.send(JSON.stringify({phrase: phrase}));
+    xmlhttpp.send(JSON.stringify({phrase: phrase}));
 
 }
